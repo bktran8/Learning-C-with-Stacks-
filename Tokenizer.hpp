@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <iostream>
 #include <vector>
-#include <cstring>
+#include <sstream>
+#include <string>
 using namespace std;
 
 class Tokenizer{
-
-std::vector<std::string>* GetTokens(const char *str, char d = ' ');
+std::vector<std::string>* GetTokens(const char* str);
 };
