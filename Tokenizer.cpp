@@ -1,25 +1,34 @@
 #include "Tokenizer.hpp"
+#include <string>
 
 
-
-std::vector<std::string>* GetTokens(const char *str, char d = ' '){
-    vector<string>* result;
-    const char *start = str;
-    int count = 1;
-    while (*str != d && *str != '\0'){
+std::vector<std::string>* GetTokens(const char* str){
+    vector<string>* GetTokens;
+    
+    bool IN = true;
+    int tokens=0;
+    
+    while(*str != '\0'){
+        if(std::isspace(*str)) {
+         IN = true;
+        }else if(IN){
+            tokens++;
+            IN = false;
+        }
         str++;
-        count++;
-        result->push_back(string(start,str));
     }
-    if (count>2 || count == 0 || str[0] == ' '){
-            cout << "ERROR! Incorrect number of tokens found." << endl;
+    if(tokens>2 || tokens ==0){
+        std::cout<<"ERROR! Incorrect number of tokens found." << std::endl;
+        
+    
     }
-    return result;
+    while (tokens != 0){
+        GetTokens++;
+        tokens--;
+    }
+    return GetTokens;
     
     
     
-   
-    
-    
-  
+ 
 }
