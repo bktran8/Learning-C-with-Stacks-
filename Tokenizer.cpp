@@ -1,34 +1,45 @@
+#include <vector>
+#include <iostream>
+#include <sstream>
 #include "Tokenizer.hpp"
-#include <string>
 
+using namespace std;
 
-std::vector<std::string>* GetTokens(const char* str){
-    vector<string>* GetTokens;
+vector<string>* Tokenizer::GetTokens(){
+    vector<string>* temp = new vector<string>;
+    string input;
+    string token;
+    int num_Tokens = 0;
+    int token_Length = 0;
     
-    bool IN = true;
-    int tokens=0;
-    
-    while(*str != '\0'){
-        if(std::isspace(*str)) {
-         IN = true;
-        }else if(IN){
-            tokens++;
-            IN = false;
-        }
-        str++;
-    }
-    if(tokens>2 || tokens ==0){
-        std::cout<<"ERROR! Incorrect number of tokens found." << std::endl;
+    for(;;){
+        getline(cin, input);
+        stringstream stream(input);
         
-    
+        while(getline(stream, token, ' ')){
+            num_Tokens++;
+            if((token_Length=token.length() > MAXCHARS)){
+                break;
+            }
+            //code for STR/INT
+        }
+        if(token_Length > MAXCHARS) {
+            cout << "ERROR! Input string too long." << endl;
+            num_Tokens = 0;
+            (*temp).clear();
+            continue;
+        }
+
+        if ((num_Tokens > MAXTOKENS) || (num_Tokens == 0)) {
+            cout << "ERROR! Incorrect number of tokens found." << endl;
+            num_Tokens = 0;
+            (*temp).clear();
+            continue;
+        } else {
+            break;
+        }
+
     }
-    while (tokens != 0){
-        GetTokens++;
-        tokens--;
-    }
-    return GetTokens;
-    
-    
-    
- 
+    return temp;
 }
+
