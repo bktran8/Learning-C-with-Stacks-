@@ -11,8 +11,13 @@ vector<string>* Tokenizer::GetTokens(){
     string token;
     int num_Tokens = 0;
     int token_Length = 0;
-    
+    int char_Count = 0;
+    int num_Count = 0;
+
     for(;;){
+        
+        cout << "> ";
+    
         getline(cin, input);
         stringstream stream(input);
         
@@ -21,7 +26,23 @@ vector<string>* Tokenizer::GetTokens(){
             if((token_Length=token.length() > MAXCHARS)){
                 break;
             }
-            //code for STR/INT
+            for(int i = 0; i < token.length() ; i++) {
+                if(isalpha(token[i])) { //still need to check for decimal
+                    char_Count++;
+                } else {
+                    num_Count++;
+                }
+            }
+
+
+            if(char_Count == 0) {
+                (*temp).push_back("INT ");
+            } else {
+                (*temp).push_back("STR ");
+            }
+
+            char_Count = 0;
+            num_Count = 0;
         }
         if(token_Length > MAXCHARS) {
             cout << "ERROR! Input string too long." << endl;
