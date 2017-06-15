@@ -1,13 +1,9 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <iostream>
-#include <vector>
-#include <sstream>
 #include <string>
-using namespace std;
-
+#define MAXTOKENS 2
+#define MAXCHARS 3
 
 class Tokenizer{
-    std::vector<std::string>* GetTokens();
-
+public:
+    static std::vector<std::string>* GetTokens();
+    
 };
