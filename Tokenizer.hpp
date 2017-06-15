@@ -6,6 +6,8 @@
 #include <string>
 using namespace std;
 
+
 class Tokenizer{
-std::vector<std::string>* GetTokens(const char* str);
+    std::vector<std::string>* GetTokens();
+
 };
