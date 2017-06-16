@@ -11,6 +11,7 @@ vector<string>* Tokenizer::GetTokens() {
     vector<string>* temp = new vector<string>;
     string input;
     string token;
+    static int input_Count = 0;
 
 
     for(;;) {
@@ -52,7 +53,8 @@ vector<string>* Tokenizer::GetTokens() {
             } else {
                 (*temp).push_back("STR ");
             }
-
+            input_Count++;
+            
             char_Count = 0;
             num_Count = 0;
 
