@@ -7,7 +7,6 @@
 
 using namespace std;
 int input_Count;
-vector<string>* temp;
 
 int main(int argc, char** argv) {
     std::cout << "Assignment #2-2, Brenda Tran, bktran8@gmail.com" << endl;
@@ -22,10 +21,10 @@ int main(int argc, char** argv) {
     }
     int N = (atoi(argv[1]));
     while (input_Count <= N) {
-        std::vector<std::string>* GetTokens();
+        vector<string> *temp = Tokenizer::GetTokens();
         for (int i = 0; i < (*temp).size(); i++) {
             cout << temp->at(i);
-            if(i !=(*temp).size()){
+            if(i !=(*temp).size()-1){
                 cout<< " ";
             } 
         }
