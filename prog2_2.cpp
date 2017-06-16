@@ -6,7 +6,7 @@
 
 
 using namespace std;
-extern int input_Count;
+int input_Count;
 
 int main(int argc, char** argv) {
     std::cout << "Assignment #2-1, Brenda Tran, bktran8@gmail.com" << endl;
@@ -25,7 +25,7 @@ int main(int argc, char** argv) {
         for (int i = 0; i < (*temp).size(); i++) {
             cout << temp->at(i) << " ";
         }
-        break;
+        continue;
     }
     return 0;
 }
