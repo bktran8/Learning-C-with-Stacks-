@@ -9,7 +9,7 @@ using namespace std;
 int input_Count;
 
 int main(int argc, char** argv) {
-    std::cout << "Assignment #2-1, Brenda Tran, bktran8@gmail.com" << endl;
+    std::cout << "Assignment #2-2, Brenda Tran, bktran8@gmail.com" << endl;
     if (argc >= 3 || argc == 0 || argc == 1) {
         std::cerr << "ERROR! Program accepts 1 command line argument." << endl;
         return 0;
@@ -25,6 +25,7 @@ int main(int argc, char** argv) {
         for (int i = 0; i < (*temp).size(); i++) {
             cout << temp->at(i) << " ";
         }
+        cout<<endl;
         continue;
     }
     return 0;
