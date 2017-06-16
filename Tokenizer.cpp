@@ -73,7 +73,7 @@ vector<string>* Tokenizer::GetTokens() {
         } else if (num_Tokens==1){
             if(!strncmp(&token[0],"quit",4)) {
                 cout<<"k thx bye."<<endl;
-                exit(1);
+                break;
             }
         }
         if((int_Count == 2)|| (str_Count ==2)){
