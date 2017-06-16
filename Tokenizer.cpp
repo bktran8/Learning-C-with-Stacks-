@@ -49,9 +49,9 @@ vector<string>* Tokenizer::GetTokens() {
                 str_Count++;
             }
             if(char_Count == 0) {
-                (*temp).push_back("INT");
+                (*temp).push_back("INT ");
             } else {
-                (*temp).push_back("STR");
+                (*temp).push_back("STR ");
             }
             input_Count++;
             
