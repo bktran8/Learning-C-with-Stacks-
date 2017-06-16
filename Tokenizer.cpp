@@ -1,6 +1,8 @@
 #include <vector>
 #include <iostream>
 #include <sstream>
+#include <cstring>
+#include <stdlib.h>
 #include "Tokenizer.hpp"
 
 using namespace std;
