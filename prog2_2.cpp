@@ -23,7 +23,10 @@ int main(int argc, char** argv) {
     while (input_Count <= N) {
         vector<string> *temp = Tokenizer::GetTokens();
         for (int i = 0; i < (*temp).size(); i++) {
-            cout << temp->at(i) << " ";
+            cout << temp->at(i);
+            if(i !=(*temp).size()){
+                cout<< " ";
+            } 
         }
         cout<<endl;
         continue;
