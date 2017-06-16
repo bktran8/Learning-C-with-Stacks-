@@ -22,9 +22,8 @@ int main(int argc, char** argv) {
     int N = (atoi(argv[1]));
     while (input_Count <= N) {
         vector<string> *temp = Tokenizer::GetTokens();
-        for (int i = 0; i <= (*temp).size(); i++) {
+        for (int i = 0; i < (*temp).size(); i++) {
             cout << temp->at(i);
-            cout<< " ";
         }
         cout<<endl;
         continue;
