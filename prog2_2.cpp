@@ -24,7 +24,7 @@ int main(int argc, char** argv) {
         vector<string> *temp = Tokenizer::GetTokens();
         for (int i = 0; i < (*temp).size(); i++) {
             cout << temp->at(i);
-            if(i !=(*temp).size()){
+            if(i !=(*temp).size()-1){
                 cout<< " ";
             } 
         }
