@@ -22,9 +22,8 @@ int main(int argc, char** argv) {
     int N = (atoi(argv[1]));
     Tokenizer test;
     while (input_Count <= N) {
-        
         vector<string> *temp = test.GetTokens();
-        if((*temp).front() == "quit"){
+        if(((*temp).front() =="quit")||((*temp).front() =="quiT")){
             exit(0);
         }
         for (int i = 0; i < (*temp).size(); i++) {
