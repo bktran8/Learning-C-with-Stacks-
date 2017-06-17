@@ -26,9 +26,7 @@ int main(int argc, char** argv) {
         vector<string> *temp = test.GetTokens();
         if(((*temp).front() =="quit")||((*temp).front() =="quiT")){
             exit(0);
-        }
-        for (int i = 0; i < (*temp).size(); i++) {
-            } 
+   
         }
         cout<<endl;
         continue;
