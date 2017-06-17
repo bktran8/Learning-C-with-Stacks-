@@ -6,9 +6,9 @@ public:
     vector<T> data(int);
 
 
-    void push(T d);
-    int pop();
-    void print();
+    void Push(T d);
+    int Pop();
+    void Print();
 
 
 };
