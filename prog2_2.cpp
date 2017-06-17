@@ -23,7 +23,6 @@ int main(int argc, char** argv) {
     while (input_Count <= N) {
         vector<string> *temp = Tokenizer::GetTokens();
         if((*temp).front() == "quit"){
-            cout<< "k thx bye." <<endl;
             exit(0);
         }
         for (int i = 0; i < (*temp).size(); i++) {
