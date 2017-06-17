@@ -28,8 +28,6 @@ int main(int argc, char** argv) {
             exit(0);
         }
         for (int i = 0; i < (*temp).size(); i++) {
-            if(i !=(*temp).size()-1){
-                cout<< " ";
             } 
         }
         cout<<endl;
