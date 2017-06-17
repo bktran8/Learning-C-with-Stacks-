@@ -20,8 +20,10 @@ int main(int argc, char** argv) {
         return 0;
     }
     int N = (atoi(argv[1]));
+    Tokenizer test;
     while (input_Count <= N) {
-        vector<string> *temp = Tokenizer::GetTokens();
+        
+        vector<string> *temp = test.GetTokens();
         if((*temp).front() == "quit"){
             exit(0);
         }
