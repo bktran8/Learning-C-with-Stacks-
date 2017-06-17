@@ -72,7 +72,7 @@ vector<string>* Tokenizer::GetTokens() {
             continue;
         } else if (num_Tokens==1){
             if(!strncmp(&token[0],"quit",4)) {
-                exit(1);
+                continue;
             }
         }
         if((int_Count == 2)|| (str_Count ==2)){
