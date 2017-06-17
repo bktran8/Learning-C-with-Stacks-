@@ -7,7 +7,7 @@ public:
 
 
     void Push(T d);
-    int Pop();
+    T Stack<T>::Pop();
     void Print();
 
 
