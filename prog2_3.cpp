@@ -34,7 +34,8 @@ int main(int argc, char** argv) {
         if(((*temp).front()) == "pop"){
             test2.Pop();
         }
+        test2.Print();
     }
-    test2.Print();
+    //test2.Print();
     return 0;
 }
