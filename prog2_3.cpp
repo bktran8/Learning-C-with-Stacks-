@@ -21,7 +21,7 @@ int main(int argc, char** argv) {
     }
     int N = (atoi(argv[1]));
     Tokenizer test;
-    Stack<int> test2;
+    Stack<string> test2;
     for( int input_Count = 0; input_Count < N; input_Count++) {
         vector<string> *temp = test.GetTokens();
         if(((*temp).front() =="quit")||((*temp).front() =="quiT")){
@@ -29,8 +29,7 @@ int main(int argc, char** argv) {
 
         }
        if(((*temp).front()) == "push"){
-            //test2.Push((*temp).back());
-            test2.Push(3);
+            test2.Push((*temp).back());
         }
         if(((*temp).front()) == "pop"){
             test2.Pop();
