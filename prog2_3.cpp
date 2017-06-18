@@ -1,13 +1,11 @@
-#include <vector>
-#include <cstring>
-#include <cstdlib>
-#include <iostream>
+#include <string>
+#include "Stack.hpp"
 #include "Tokenizer.hpp"
 #include "Stack.hpp"
 
 
 using namespace std;
-int input_Count;
+
 
 int main(int argc, char** argv) {
     cout << "Assignment #2-3, Brenda Tran, bktran8@gmail.com" << endl;
@@ -22,14 +20,20 @@ int main(int argc, char** argv) {
     }
     int N = (atoi(argv[1]));
     Tokenizer test;
-    while (input_Count <= N) {
+    Stack<string> test2;
+    for( int input_Count = 0; input_Count < N; input_Count++) {
         vector<string> *temp = test.GetTokens();
         if(((*temp).front() =="quit")||((*temp).front() =="quiT")){
             exit(0);
-   
+
         }
-        cout<<endl;
-        continue;
+        if(((*temp).front()) == "push"){
+            test2.Push((*temp).back());
+        }
+        if(((*temp).front()) == "pop"){
+            test2.Pop();
+        }
     }
+    test2.Print();
     return 0;
 }
