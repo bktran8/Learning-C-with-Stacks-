@@ -17,7 +17,7 @@ public:
 
 template <class T>
 void Stack<T>::Push(T){
-    data.push_back(d);
+    data.push_back(T);
 }
 
 template <class T>
