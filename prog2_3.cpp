@@ -1,4 +1,5 @@
 #include <string>
+#include <cstring>
 #include "Stack.hpp"
 #include "Tokenizer.hpp"
 
