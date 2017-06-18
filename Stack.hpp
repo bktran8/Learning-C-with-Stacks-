@@ -1,17 +1,19 @@
+#include <vector>
 using namespace std;
 
 template <class T>
 class Stack{
 public:
-    vector<T> data(int);
+    vector<T> data;
 
 
     void Push(T d);
-    T Stack<T>::Pop();
+    void Pop();
     void Print();
 
 
 };
+
 
 
 
