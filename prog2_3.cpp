@@ -27,13 +27,14 @@ int main(int argc, char** argv) {
             exit(0);
 
         }
-        if(((*temp).front()) == "push"){
+       /* if(((*temp).front()) == "push"){
             test2.Push((*temp).back());
         }
         if(((*temp).front()) == "pop"){
             test2.Pop();
         }
     }
-    test2.Print();
+    test2.Print();*/
+    }
     return 0;
 }
