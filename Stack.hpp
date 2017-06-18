@@ -8,7 +8,7 @@ public:
     vector<T> data;
 
 
-    void Push(T);
+    void Push(T d);
     T Pop();
     void Print();
 
@@ -16,8 +16,8 @@ public:
 };
 
 template <class T>
-void Stack<T>::Push(T){
-    data.push_back(T);
+void Stack<T>::Push(T d){
+    data.push_back(d);
 }
 
 template <class T>
