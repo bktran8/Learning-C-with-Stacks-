@@ -36,6 +36,5 @@ int main(int argc, char** argv) {
         }
     }
     test2.Print();
-    }
     return 0;
 }
